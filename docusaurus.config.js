@@ -43,12 +43,12 @@ const config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: '', // Add a title for your navbar
+      title: '', 
       logo: {
         alt: 'Botlhale AI Logo',
-        src: '/img/logo.png', // Adjust the path to reflect the location of your logo image
+        src: '/img/logo.png',
       },
-      items: [], // Add navbar items if needed
+      items: [], 
     },
     colorMode: {
       defaultMode: 'light',
