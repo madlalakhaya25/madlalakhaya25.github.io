@@ -4,77 +4,62 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  title: 'Bua',
+  title: 'Vela',
   tagline: "The Botlhale NLP Toolkit",
-  url: 'https://docs.botlhale.xyz',
+  url: 'https://madlalakhaya25.github.io', // Update URL to your GitHub Pages URL
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
-  organizationName: 'botlhale-AI', // Usually your GitHub org/user name.
-  projectName: 'documentation', // Usually your repo name.
+  organizationName: 'madlalakhaya25', // Replace with your GitHub username or organization name
+  projectName: 'madlalakhaya25.github.io', // Replace with your repository name
+  deploymentBranch: 'gh-pages',
+  // Assuming your repository is named `madlalakhaya25.github.io`
 
   presets: [
     [
       '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-         // editUrl: 'https://botlhale-ai.github.io/documentation/',
+          editUrl: 'https://github.com/madlalakhaya25/madlalakhaya25.github.io/edit/main/docs/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://botlhale-ai.github.io/documentation/',
+          editUrl: 'https://github.com/madlalakhaya25/madlalakhaya25.github.io/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: '',
-        logo: {
-          alt: 'Botlhale AI Logo',
-          src: 'img/logo.png',
-        }, 
-        colorMode: {
-          defaultMode: 'light',
-          disableSwitch: false,
-          respectPrefersColorScheme: false,
-        },
-        // items: [          
-        //   {
-        //     type: 'doc',
-        //     docId: 'Botbuilder',
-        //     position: 'left',
-        //     label: 'Menu',
-        //   },
-          
-        // ],
+  themeConfig: {
+    image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: '', // Add a title for your navbar
+      logo: {
+        alt: 'Botlhale AI Logo',
+        src: '/img/logo.png', // Adjust the path to reflect the location of your logo image
       },
-      
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+      items: [], // Add navbar items if needed
+    },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  },
 };
 
 export default config;
