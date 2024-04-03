@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Data Upload
@@ -18,18 +18,18 @@ The Vela platform offers two methods for uploading your call data, depending on 
     **Process:**
     1. During onboarding, share access credentials for your FTP server with Botlhale AI. 
     2. Botlhale AI establishes a connection and synchronises your call data automatically. 
-    3. Call data appears in the "Calls" screen on the Vela platform.
+    3. Call data appears in the `Calls` screen on the Vela platform.
 
-2. Manual Batch Upload:
-    - Suitable for: Users who do not store call data on an FTP server. 
-    - Benefits: Flexible uploading for various data sources.
+2. **Manual Batch Upload**:
+    - **Suitable for**: Users who do not store call data on an FTP server. 
+    - **Benefits**: Flexible uploading for various data sources.
 
     **Process:**
-    1. Navigate to the "Calls" screen on the Vela platform.
-    2. Click the "Batch Upload" button. 
+    1. Navigate to the `Calls` screen on the Vela platform.
+    2. Click the `Batch Upload` button. 
     3. Select and upload a zip file containing your call data. 
-    4. Click "Upload" to initiate the process.
-    5. Upon successful upload, your call data appears in the "Calls" screen table.
+    4. Click `Upload` to initiate the process.
+    5. Upon successful upload, your call data appears in the `Calls` screen table.
 
 :::note TECHNICAL NOTES:
 - Both methods support uploading various call data formats, including CSV, TSV, and JSON. 

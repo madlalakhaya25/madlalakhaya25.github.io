@@ -23,8 +23,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Smart Detector',
-    link: '/docs/Smart Detector',
+    title: ' Smart Search',
+    link: '/docs/ Smart Search',
     description: (
       <>
         Learn how to build and manage complex search queries.
@@ -36,7 +36,7 @@ const FeatureList = [
     link: '/docs/Agents',
     description: (
       <>
-        Learn how to review and export insights specific to agent performance
+      Learn how to review and export insights specific to agent performance
       </>
     ),
   },
@@ -50,14 +50,25 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Notifications & Settings',
-    link: '/docs/Notifications & Settings',
+    title: 'Notifications',
+    link: '/docs/Notifications',
     description: (
       <>
         Learn how to manage your platform and alert preferences.
       </>
     ),
   },
+
+  {
+    title: 'Settings',
+    link: '/docs/Settings',
+    description: (
+      <>
+        Learn how to manage your platform settings.
+      </>
+    ),
+  },
+
   {
     title: 'Data Upload',
     link: '/docs/Data Upload',
@@ -96,17 +107,26 @@ const ytVideos = [
 ];
 
 function Feature({ title, link, description }) {
+  const handleClick = () => {
+    window.open(link, '_blank');
+  };
+
   return (
-    <div className={clsx('col col--3', styles.border)}>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">
+    <div 
+      className={clsx('col col--3', styles.feature, styles.border)}
+      onClick={handleClick} 
+      style={{ cursor: 'pointer' }}
+    >
+      <div className={clsx(styles.content, 'text--center', 'padding-horiz--md')}>
+        <h3 className={styles.title}>
           <a href={link} rel="noopener noreferrer">{title}</a>
-        </Heading>
-        <p>{description}</p>
+        </h3>
+        <p className={styles.description}>{description}</p>
       </div>
     </div>
   );
 }
+
 
 function YoutubeVideo({ title, videoId }) {
   return (

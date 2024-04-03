@@ -1,25 +1,17 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-
   title: 'Vela',
   tagline: "The Botlhale NLP Toolkit",
-  url: 'https://madlalakhaya25.github.io', // Update URL to your GitHub Pages URL
+  url: 'https://madlalakhaya25.github.io', 
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.svg',
-  organizationName: 'madlalakhaya25', // Replace with your GitHub username or organization name
-  projectName: 'madlalakhaya25.github.io', // Replace with your repository name
-  deploymentBranch: 'gh-pages',
-  // Assuming your repository is named `madlalakhaya25.github.io`
+  favicon: 'favicon.ico',
+  organizationName: 'madlalakhaya25', 
+  projectName: 'madlalakhaya25.github.io', 
+  deploymentBranch: 'gh-pages', 
 
   presets: [
     [
@@ -43,10 +35,10 @@ const config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: '', 
+      title: 'Vela',
       logo: {
         alt: 'Botlhale AI Logo',
-        src: '/img/logo.png',
+        src: '/img/VELA.png',
       },
       items: [], 
     },
@@ -59,7 +51,18 @@ const config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
+    head: [
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap',
+        },
+      },
+    ],
   },
+
 };
 
 export default config;
